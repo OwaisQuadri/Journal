@@ -9,23 +9,29 @@
 /* Begin PBXBuildFile section */
 		CD452D452A5282B4000B4800 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD452D442A5282B4000B4800 /* AppDelegate.swift */; };
 		CD452D472A5282B4000B4800 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD452D462A5282B4000B4800 /* SceneDelegate.swift */; };
-		CD452D492A5282B4000B4800 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD452D482A5282B4000B4800 /* ViewController.swift */; };
 		CD452D4C2A5282B4000B4800 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD452D4A2A5282B4000B4800 /* Main.storyboard */; };
 		CD452D4F2A5282B4000B4800 /* Journal.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CD452D4D2A5282B4000B4800 /* Journal.xcdatamodeld */; };
 		CD452D512A5282B5000B4800 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD452D502A5282B5000B4800 /* Assets.xcassets */; };
 		CD452D542A5282B5000B4800 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD452D522A5282B5000B4800 /* LaunchScreen.storyboard */; };
+		CD452D5E2A52841E000B4800 /* JournalTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD452D5D2A52841E000B4800 /* JournalTableViewController.swift */; };
+		CD452D622A528E06000B4800 /* EntryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD452D612A528E06000B4800 /* EntryViewController.swift */; };
+		CD452D652A5294C8000B4800 /* Entry+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD452D632A5294C8000B4800 /* Entry+CoreDataClass.swift */; };
+		CD452D662A5294C8000B4800 /* Entry+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD452D642A5294C8000B4800 /* Entry+CoreDataProperties.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		CD452D412A5282B4000B4800 /* Journal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Journal.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD452D442A5282B4000B4800 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CD452D462A5282B4000B4800 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		CD452D482A5282B4000B4800 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		CD452D4B2A5282B4000B4800 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CD452D4E2A5282B4000B4800 /* Journal.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Journal.xcdatamodel; sourceTree = "<group>"; };
 		CD452D502A5282B5000B4800 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CD452D532A5282B5000B4800 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CD452D552A5282B5000B4800 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CD452D5D2A52841E000B4800 /* JournalTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JournalTableViewController.swift; sourceTree = "<group>"; };
+		CD452D612A528E06000B4800 /* EntryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryViewController.swift; sourceTree = "<group>"; };
+		CD452D632A5294C8000B4800 /* Entry+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Entry+CoreDataClass.swift"; sourceTree = "<group>"; };
+		CD452D642A5294C8000B4800 /* Entry+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Entry+CoreDataProperties.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,14 +64,17 @@
 		CD452D432A5282B4000B4800 /* Journal */ = {
 			isa = PBXGroup;
 			children = (
+				CD452D632A5294C8000B4800 /* Entry+CoreDataClass.swift */,
+				CD452D642A5294C8000B4800 /* Entry+CoreDataProperties.swift */,
 				CD452D442A5282B4000B4800 /* AppDelegate.swift */,
 				CD452D462A5282B4000B4800 /* SceneDelegate.swift */,
-				CD452D482A5282B4000B4800 /* ViewController.swift */,
-				CD452D4A2A5282B4000B4800 /* Main.storyboard */,
 				CD452D502A5282B5000B4800 /* Assets.xcassets */,
 				CD452D522A5282B5000B4800 /* LaunchScreen.storyboard */,
 				CD452D552A5282B5000B4800 /* Info.plist */,
 				CD452D4D2A5282B4000B4800 /* Journal.xcdatamodeld */,
+				CD452D4A2A5282B4000B4800 /* Main.storyboard */,
+				CD452D5D2A52841E000B4800 /* JournalTableViewController.swift */,
+				CD452D612A528E06000B4800 /* EntryViewController.swift */,
 			);
 			path = Journal;
 			sourceTree = "<group>";
@@ -141,10 +150,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CD452D492A5282B4000B4800 /* ViewController.swift in Sources */,
 				CD452D452A5282B4000B4800 /* AppDelegate.swift in Sources */,
+				CD452D662A5294C8000B4800 /* Entry+CoreDataProperties.swift in Sources */,
+				CD452D5E2A52841E000B4800 /* JournalTableViewController.swift in Sources */,
 				CD452D472A5282B4000B4800 /* SceneDelegate.swift in Sources */,
 				CD452D4F2A5282B4000B4800 /* Journal.xcdatamodeld in Sources */,
+				CD452D652A5294C8000B4800 /* Entry+CoreDataClass.swift in Sources */,
+				CD452D622A528E06000B4800 /* EntryViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
