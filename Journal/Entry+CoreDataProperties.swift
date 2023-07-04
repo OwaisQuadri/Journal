@@ -22,5 +22,22 @@ extension Entry {
 }
 
 extension Entry : Identifiable {
+  // you can edit this part
 
+    func getMonth() -> String {
+        let formatter = DateFormatter()
+        formatter.dateFormat = "MMM"
+        if let date = date {
+            return formatter.string(from: date).uppercased()
+        }
+        return "ERR"
+    }
+    func getDay() -> String {
+        let formatter = DateFormatter()
+        formatter.dateFormat = "d"
+        if let date = date {
+            return formatter.string(from: date).uppercased()
+        }
+        return "32"
+    }
 }

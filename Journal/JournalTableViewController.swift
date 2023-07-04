@@ -39,10 +39,12 @@ class JournalTableViewController: UITableViewController {
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        if let cell = tableView.dequeueReusableCell(withIdentifier: "JournalEntryCell" ) {
+        if let cell = tableView.dequeueReusableCell(withIdentifier: "JournalEntryCell" ) as? JournalEntryTableViewCell {
             // Configure the cell...
             let entry = entries[indexPath.row]
-            cell.textLabel?.text = entry.text
+            cell.journalEntryLabel.text = entry.text
+            cell.monthLabel.text = entry.getMonth()
+            cell.dayLabel.text = entry.getDay()
 
             return cell
         } else {
