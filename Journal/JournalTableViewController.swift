@@ -39,13 +39,16 @@ class JournalTableViewController: UITableViewController {
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = UITableViewCell()
+        if let cell = tableView.dequeueReusableCell(withIdentifier: "JournalEntryCell" ) {
+            // Configure the cell...
+            let entry = entries[indexPath.row]
+            cell.textLabel?.text = entry.text
 
-        // Configure the cell...
-        let entry = entries[indexPath.row]
-        cell.textLabel?.text = entry.text
+            return cell
+        } else {
+            return UITableViewCell()
+        }
 
-        return cell
     }
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 100

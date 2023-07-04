@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="pG5-Fu-NKQ">
     <device id="retina6_12" orientation="portrait" appearance="dark"/>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
         <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -24,6 +25,39 @@
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="gj8-eB-8zh" id="TuC-8Y-5ne">
                                     <rect key="frame" x="0.0" y="0.0" width="393" height="100"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MAR" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="liy-d4-SRL">
+                                            <rect key="frame" x="20" y="11" width="72" height="41"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="72" id="9EG-mb-rFS"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="27" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k1B-We-Jzk">
+                                            <rect key="frame" x="36.666666666666671" y="48.333333333333343" width="38.666666666666671" height="40.666666666666657"/>
+                                            <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
+                                            <color key="textColor" systemColor="systemRedColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Journal Entry Details ..." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zcv-y3-c7m">
+                                            <rect key="frame" x="107.00000000000001" y="11" width="175.33333333333337" height="78"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="bottomMargin" secondItem="Zcv-y3-c7m" secondAttribute="bottom" id="7m5-0J-ORF"/>
+                                        <constraint firstItem="liy-d4-SRL" firstAttribute="leading" secondItem="TuC-8Y-5ne" secondAttribute="leadingMargin" id="CbB-0A-X3B"/>
+                                        <constraint firstItem="liy-d4-SRL" firstAttribute="top" secondItem="TuC-8Y-5ne" secondAttribute="topMargin" id="E7M-g1-sBa"/>
+                                        <constraint firstItem="k1B-We-Jzk" firstAttribute="centerX" secondItem="liy-d4-SRL" secondAttribute="centerX" id="coB-xL-rxR"/>
+                                        <constraint firstItem="k1B-We-Jzk" firstAttribute="bottom" secondItem="TuC-8Y-5ne" secondAttribute="bottomMargin" id="czp-fu-0ZB"/>
+                                        <constraint firstAttribute="trailingMargin" relation="greaterThanOrEqual" secondItem="Zcv-y3-c7m" secondAttribute="trailing" id="fpW-x3-ot5"/>
+                                        <constraint firstItem="Zcv-y3-c7m" firstAttribute="top" secondItem="TuC-8Y-5ne" secondAttribute="topMargin" id="mgt-hU-oYY"/>
+                                        <constraint firstItem="Zcv-y3-c7m" firstAttribute="leading" secondItem="liy-d4-SRL" secondAttribute="trailing" constant="15" id="wiI-IF-per"/>
+                                    </constraints>
                                 </tableViewCellContentView>
                             </tableViewCell>
                         </prototypes>
@@ -125,6 +159,9 @@
         </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
