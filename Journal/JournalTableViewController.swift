@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import CoreData
 
 class JournalTableViewController: UITableViewController {
     
@@ -14,8 +15,9 @@ class JournalTableViewController: UITableViewController {
         // gets called every time this is shown
         if let context = (UIApplication.shared.delegate as? AppDelegate)?.persistentContainer.viewContext {
             // access to coredata context in here
-            if let entriesFromCoreData = try? context.fetch(Entry.fetchRequest())
-                as? [Entry]{
+            let request: NSFetchRequest<Entry> = Entry.fetchRequest()
+            request.sortDescriptors = [NSSortDescriptor(key: "date", ascending: false)]
+            if let entriesFromCoreData = try? context.fetch(request) {
                 entries = entriesFromCoreData
                 tableView.reloadData()
             }
